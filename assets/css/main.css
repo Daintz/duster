@@ -86,116 +86,104 @@ section {
   z-index: 1;
 }
 
-.whatsapp {
+.boxone {
   position: fixed;
+  width: 100%;
+  height: 70px;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.whatsapp {
   z-index: 2;
   width: 70px;
-  top: 85%;
-  left: 3%;
-  translate: translate(-50%, -50%);
 }
 
 .popap {
-  position: fixed;
-  width: 20%;
   color: white;
   border: 1px solid #000;
   border-radius: 25px;
+  width: 30%;
   padding: 10px;
   background: green;
   z-index: 2;
 }
 
-@media screen and (min-width: 1308px) {
-  .popap {
-    top: 75%;
-    left: 2%;
+@media screen and (min-width: 711px) and (max-width: 871px) {
+  .resp {
+    bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1307px) {
-  .popap {
-    top: 74%;
-    left: 2%;
+@media screen and (min-width: 529px) and (max-width: 710px) {
+  .resp {
+    bottom: 55px;
   }
 }
 
-@media screen and (max-width: 1089px) {
-  .popap {
-    top: 70%;
-    left: 2%;
+@media screen and (min-width: 407px) and (max-width: 528px) {
+  .resp {
+    bottom: 80px;
   }
 }
 
-@media screen and (max-width: 886px) {
-  .popap {
-    top: 67%;
-    left: 2%;
+@media screen and (min-width: 403px) and (max-width: 406px) {
+  .resp {
+    bottom: 105px;
   }
 }
 
-@media screen and (max-width: 660px) {
-  .popap {
-    top: 64%;
-    left: 2%;
+@media screen and (min-width: 361px) and (max-width: 403px) {
+  .resp {
+    bottom: 125px;
   }
 }
 
-@media screen and (max-width: 609px) {
+@media screen and (min-width: 348px) and (max-width: 360px) {
+  .resp {
+    bottom: 80px;
+  }
   .popap {
-    top: 60%;
-    left: 2%;
+    width: 35%;
   }
 }
 
-@media screen and (max-width: 541px) {
+@media screen and (min-width: 345px) and (max-width: 347px) {
+  .resp {
+    bottom: 105px;
+  }
   .popap {
-    top: 64%;
-    left: 2%;
-    width: 23%;
+    width: 35%;
   }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (min-width: 309px) and (max-width: 345px) {
+  .resp {
+    bottom: 125px;
+  }
   .popap {
-    top: 57%;
-    left: 2%;
-    width: 23%;
+    width: 35%;
   }
 }
 
-@media screen and (max-width: 430px) {
-  .popap {
-    top: 57%;
-    left: 2%;
-    width: 27%;
+@media screen and (min-width: 271px) and (max-width: 308px) {
+  .resp {
+    bottom: 125px;
   }
-}
-
-@media screen and (max-width: 366px) {
   .popap {
-    top: 53%;
-    left: 2%;
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 328px) {
-  .popap {
-    top: 63%;
-    left: 2%;
     width: 40%;
   }
 }
 
-@media screen and (max-width: 302px) {
+@media screen and (min-width: 0px) and (max-width: 271px) {
+  .resp {
+    bottom: 150px;
+  }
   .popap {
-    top: 56%;
-    left: 2%;
     width: 40%;
   }
 }
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
