@@ -1,11 +1,26 @@
-/**
-* Template Name: Yummy - v1.2.0
-* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
+
+  /**
+   * whatsapp message
+   * .whatsapp {
+  position: fixed;
+  width: 70px;
+  margin-top: 5%;
+  margin-left: 1.5%;
+}
+   */
+
+  setTimeout(() => {
+    let whatsapp = document.querySelector('.whatsapp');
+    let p = document.createElement('p');
+    p.className = "popap";
+    p.textContent = "No te quedes con las ganas de viajar, contactame ahora mismo";
+    // console.log(p);
+    // console.log(whatsapp);
+
+    whatsapp.insertAdjacentElement('beforebegin', p);
+  }, 5000);
 
   /**
    * Preloader
