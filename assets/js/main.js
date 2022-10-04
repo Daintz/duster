@@ -1,25 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
-  /**
-   * whatsapp message
-   * .whatsapp {
-  position: fixed;
-  width: 70px;
-  margin-top: 5%;
-  margin-left: 1.5%;
-}
-   */
+
 
   setTimeout(() => {
+    let boxone = document.querySelector('.boxone');
     let whatsapp = document.querySelector('.whatsapp');
     let p = document.createElement('p');
+    boxone.style.height = "160px";
     p.className = "popap";
     p.textContent = "No te quedes con las ganas de viajar, contactame ahora mismo";
     // console.log(p);
     // console.log(whatsapp);
-
+    
     whatsapp.insertAdjacentElement('beforebegin', p);
+    boxone.classList.add("boxone", "resp");
   }, 5000);
 
   /**
