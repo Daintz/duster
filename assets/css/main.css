@@ -148,17 +148,51 @@ section {
   }
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 541px) {
   .popap {
-    top: 53%;
+    top: 64%;
     left: 2%;
+    width: 23%;
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 525px) {
   .popap {
-    top: 49%;
+    top: 57%;
     left: 2%;
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .popap {
+    top: 57%;
+    left: 2%;
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  .popap {
+    top: 53%;
+    left: 2%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .popap {
+    top: 63%;
+    left: 2%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 302px) {
+  .popap {
+    top: 56%;
+    left: 2%;
+    width: 40%;
   }
 }
 
