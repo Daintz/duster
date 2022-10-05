@@ -95,6 +95,10 @@ section {
   z-index: 2;
 }
 
+.boxone a {
+  margin-right: 100px;
+}
+
 .whatsapp {
   z-index: 2;
   width: 70px;
@@ -1785,7 +1789,7 @@ section {
 .footer .social-links a:hover {
   color: #fff;
   border-color: #fff;
-}
+} 
 
 .footer .copyright {
   text-align: center;
