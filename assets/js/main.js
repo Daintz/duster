@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     whatsapp.insertAdjacentElement('beforebegin', p);
     boxone.classList.add("boxone", "resp");
-  }, 5000);
+  }, 20000);
 
   /**
    * Preloader
@@ -249,3 +249,71 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+   /**
+   * Languages
+   */
+  function english() {
+    const br = document.createElement('br');
+    const welcome = document.querySelector('#navbar ul li:nth-child(1) a');
+    const trips = document.querySelector('#navbar ul li:nth-child(2) a');
+    const car = document.querySelector('#navbar ul li:nth-child(3) a');
+    const photos = document.querySelector('#navbar ul li:nth-child(4) a');
+    const changeidiom = document.querySelector('#navbar ul li:nth-child(5) a');
+    const spanish = document.querySelector('#navbar ul li:nth-child(5) ul li:nth-child(1) a');
+    const english = document.querySelector('#navbar ul li:nth-child(5) ul li:nth-child(2) a');
+    const idiom = document.querySelector('#navbar ul li:nth-child(5) ul li:nth-child(4) a');
+    const welcomemessage = document.querySelector('.btn-book-a-table');
+    const mainmessage = document.querySelector('#hero div div div h2');
+    const mainmessagetwo = document.querySelector('#hero div div div p');
+    const contactme = document.querySelector('#hero div div div div a');
+    const watchvideo = document.querySelector('#hero div div div div a:nth-child(2) span');
+    const travel = document.querySelector('#travel div div:nth-child(1) h2');
+    const titletravel = document.querySelector('#travel div div:nth-child(1) p');
+    const about = document.querySelector('#about div div:nth-child(1) h2');
+    const aboutitle = document.querySelector('#about div div:nth-child(1) p');
+    const cardtitleone = document.querySelector('#about div div:nth-child(2) div div h4');
+    const cardtitleone_ = document.querySelector('#about div div:nth-child(2) div div span');
+    const cardtext = document.querySelector('#about div div:nth-child(2) div div p');
+    const cardtitletwo = document.querySelector('#comfort div div:nth-child(2) h4');
+    const cardtitletwo_ = document.querySelector('#comfort div div:nth-child(2) span');
+    const cardtitletwotext = document.querySelector('#comfort div div:nth-child(2) p');
+    const cardtitlethree = document.querySelector('#about div div:nth-child(3) div div:nth-child(2) h4');
+    const cardtitlethree_ = document.querySelector('#about div div:nth-child(3) div div:nth-child(2) span');
+    const cardtitlethreetext = document.querySelector('#about div div:nth-child(3) div div:nth-child(2) p');
+    const events = document.querySelector('#events div div h2');
+    const eventstitle = document.querySelector('#events div div p');
+    console.log(events);
+    welcome.textContent = "Welcome";
+    trips.textContent = "Trips";
+    car.textContent = "Car";
+    photos.textContent = "Photos";
+    changeidiom.textContent = "Languages";
+    spanish.textContent = "Spanish";
+    english.textContent = "English";
+    idiom.textContent = "Change the language of the page";
+    welcomemessage.textContent = "Contact me";
+    mainmessage.textContent = `Welcome, I am available for your adventure!`;
+    mainmessagetwo.textContent = `On this page you know more in detail what sites I can offer you for the city of Medellin personalized or any place you need.`;
+    contactme.textContent = "Contact me";
+    watchvideo.textContent = "Watch video";
+    travel.textContent = "Trips";
+    titletravel.textContent = "The most touristic places in Medellin";
+    about.textContent = "Car";
+    aboutitle.textContent = "Information about the car";
+    cardtitleone.textContent = "Security";
+    cardtitleone_.textContent = "The best security for you";
+    cardtext.textContent = "“The Duster vehicle, with its test released in August 2021, has the same active and passive safety content as the vehicle that obtained four stars in adult protection and 3 stars in child protection, in tests carried out by the same institution. in 2019.”";
+    cardtitletwo.textContent = "Comfort";
+    cardtitletwo_.textContent = "Comfort is paramount";
+    cardtitletwotext.textContent = "Start enjoying all the comfort thanks to its ample interior space, since it has a trunk of up to 475 liters, ideal for accommodating the luggage you need: adventure or a family trip. You can even achieve up to 1,636 liters of storage in the rear with the 1/3 and 2/3 folding seats*. In addition, its ABS brakes, driver and passenger airbags, as well as its 4x4 technology** will keep you and your your family safe at all times. Definitely, the Renault DUSTER offers you everything you need to start enjoying life your way.";
+    cardtitlethree.textContent = "Baggage";
+    cardtitlethree_.textContent = "Trolley capacity";
+    cardtitlethreetext.textContent = "The Renault Duster is the pure expression of comfort. Practical and functional, its cabin can hold up to 5 people and provides the largest capacity in its segment: 475 L. of space in the trunk. With the rear seat folded, the available space reaches 1636 L.";
+    events.textContent = "Photos";
+    eventstitle.textContent = "Travel photos";
+  }
+
+  function spanish() {
+    location.reload();
+  }
