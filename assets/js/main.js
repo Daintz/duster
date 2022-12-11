@@ -1,6 +1,7 @@
+let language = '';
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
-
 
 
   setTimeout(() => {
@@ -9,10 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let p = document.createElement('p');
     boxone.style.height = "160px";
     p.className = "popap";
-    p.textContent = "No te quedes con las ganas de viajar, contactame ahora mismo";
-    // console.log(p);
-    // console.log(whatsapp);
-    
+    p.textContent = ""
+    if (language === '') {
+      p.textContent = "No te quedes con las ganas de viajar, contactame ahora mismo";
+      console.log(language);
+    } else if (language === 'english') {
+      p.textContent = "Do not stay with the desire to travel, contact me right now";
+      console.log(language);
+    }
     whatsapp.insertAdjacentElement('beforebegin', p);
     boxone.classList.add("boxone", "resp");
   }, 20000);
@@ -254,6 +259,8 @@ document.addEventListener('DOMContentLoaded', () => {
    * Languages
    */
   function english() {
+    language = 'english';
+    console.log(language);
     const br = document.createElement('br');
     const welcome = document.querySelector('#navbar ul li:nth-child(1) a');
     const trips = document.querySelector('#navbar ul li:nth-child(2) a');
@@ -283,7 +290,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardtitlethreetext = document.querySelector('#about div div:nth-child(3) div div:nth-child(2) p');
     const events = document.querySelector('#events div div h2');
     const eventstitle = document.querySelector('#events div div p');
-    console.log(events);
+    const footerLocationH4 = document.querySelector('#footer div div div div h4');
+    const footerLocationP = document.querySelector('#footer div div div div p');
+    const footerReservationH4 = document.querySelector('#reservation div h4');
+    const footerReservationP = document.querySelector('#reservation div p');
+    const footerScheduleH4 = document.querySelector('#footer div div div:nth-child(3) div h4');
+    const footerScheduleP = document.querySelector('#footer div div div:nth-child(3) div p');
+    const footerWspH4 = document.querySelector('#footer div div div:nth-child(4) h4');
+    const footerCopyright = document.querySelector('#footer .container:nth-child(2) div');
+    const popap = document.querySelector('.popap');
+    if (popap) {
+      popap.textContent = "Do not stay with the desire to travel, contact me right now";
+    }
     welcome.textContent = "Welcome";
     trips.textContent = "Trips";
     car.textContent = "Car";
@@ -312,6 +330,14 @@ document.addEventListener('DOMContentLoaded', () => {
     cardtitlethreetext.textContent = "The Renault Duster is the pure expression of comfort. Practical and functional, its cabin can hold up to 5 people and provides the largest capacity in its segment: 475 L. of space in the trunk. With the rear seat folded, the available space reaches 1636 L.";
     events.textContent = "Photos";
     eventstitle.textContent = "Travel photos";
+    footerLocationH4.textContent = "Location";
+    footerLocationP.innerHTML = `Medellin, Antioquia.<br>Colombia.<br>`;
+    footerReservationH4.textContent = `Reservations`;
+    footerReservationP.innerHTML = `<strong>Number:</strong> +57 324 683 0741<br><strong>Email:</strong> leonardolopez603@hotmail.com<br>`;
+    footerScheduleH4.textContent = `Available schedule`;
+    footerScheduleP.innerHTML = `<strong>Monday to Sunday</strong><br>`;
+    footerWspH4.textContent = `Contact me`;
+    footerCopyright.innerHTML = `&copy; Copyright <strong><span>Leonardo Lopez</span></strong>. All rights reserved`;
   }
 
   function spanish() {
