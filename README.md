@@ -11,7 +11,7 @@
 
 <section>
   <h2>⚙| Config-enviroment</h1>
-  <p>This landing page was made with the most basic since it is not a page that needs to improve its reach</p>
+  <p>This landing page met the client's needs using:</p>
   <h3>Built With</h3>
   <ul>
     <li>HTML</li>
